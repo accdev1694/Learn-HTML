@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <!-- page heading -->
+    <h1>Contact Me</h1>
+
+    <!-- prompt user to fill form -->
+    <p>Kindly fill in the form below to get in touch with me</p>
+
+    <!-- form element wrapper -->
+    <form enctype="multipart/form-data">
+      <!-- Title field -->
+      <label for="title">Title:</label>
+
+      <!-- Mr label & input-->
+      <label for="mr">Mr</label>
+      <input type="radio" id="mr" value="mr" name="title" />
+
+      <!-- Ms label & input-->
+      <label for="ms">Ms</label>
+      <input type="radio" id="ms" value="ms" name="title" />
+
+      <!-- Dr label & input-->
+      <label for="dr">Dr</label>
+      <input type="radio" id="dr" value="dr" name="title" /><br />
+
+      <!-- Name Field -->
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        minlength="5"
+        maxlength="10"
+        required
+        placeholder="Loche"
+      />
+      <br />
+
+      <!-- Password field -->
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        placeholder="********"
+        minlength="6"
+        maxlength="12"
+        required
+      />
+      <br />
+
+      <!-- Email field -->
+      <label for="email">Email:</label>
+      <input type="email" required placeholder="akkre@email.com" id="email" />
+      <br />
+
+      <!-- Phone Number field -->
+      <label for="number">Phone Number:</label>
+      <input
+        type="tel"
+        required
+        placeholder="012-3456-7890"
+        id="number"
+        pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+      />
+      <br />
+
+      
+      <!-- Calender Number field -->
+      <label for="birthday">Birthday</label>
+      <input type="date" id="birthday" />
+      <br />
+
+      <!-- Quantity field -->
+      <label for="number">Quantity</label>
+      <input type="number" id="number" min="0" max="9" value="1" />
+      <br />
+
+      <!-- Drop-Down menu Field -->
+      <label for="payment">Payment</label>
+      <select id="payment">
+        <option value="verve">Verve</option>
+        <option value="visa">Visa</option>
+        <option value="giftcard">Giftcard</option>
+      </select><br><br>
+
+      <!-- checkbox field -->
+      <label for="subscribe">Subscribe for my Newsletters</label>
+      <input type="checkbox" id="subscribe"><br><br>
+
+      <!-- textarea field -->
+      <label for="comment">Add Comments</label><br>
+      <textarea id="comment" cols="30" rows="10" placeholder="i like coding"></textarea><br>
+
+      <br>
+      <!-- File attchment field -->
+      <label for="file">Attach a File</label><br>
+      <input type="file" id="file" accept="image/png, image/jpeg"><br><br>
+
+      <!-- submit and reset buttons -->
+      <input type="submit" />
+      <input type="reset" />
+    </form>
+  </body>
+</html>
